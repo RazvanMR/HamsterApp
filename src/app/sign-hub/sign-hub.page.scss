@@ -1,0 +1,80 @@
+ion-content.background{
+  --background: rgb(22,15,61);
+  --background: linear-gradient(180deg, rgba(22,15,61,0.2007177871148459) 20%, rgba(22,15,61,0.5032387955182073) 50%);
+  background-image: url('../../assets/sign-hub-background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ion-content {
+  --overflow: hidden;
+}
+.gradient{
+  --background: linear-gradient(#e66465, #9198e5);
+}
+.logo {
+  padding-left:5vw;
+  padding-top: 2vh;
+  width: 20vw;
+  
+  
+}
+ion-button{
+
+}
+.text{
+  position: absolute;
+  width: 327px;
+  height: 108px;
+  left: calc(50% - 327px/2);
+  top: calc(50% - 170px/2 + 146px);
+
+  /* /Title2 */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  /* or 112% */
+
+  /* Sky/White */
+  color: #FFFFFF;
+}
+.log-in{
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sign-in{
+  position: absolute;
+  width: 246px;
+  height: 20px;
+  left: calc(50% - 246px/2 + 0.5px);
+  top: calc(90% - 10px/2);
+
+  /* Regular/None/Medium */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* or 100% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Sky/White */
+  color: #FFFFFF;
+}
+.button {
+  position: absolute;
+  left: 3vw;
+  width: 87vw;
+  right: 24px;
+  bottom: 7vh;
+}
+
+.logo {
+  padding-left: 6vw;
+  padding-top: 5vh;
+}

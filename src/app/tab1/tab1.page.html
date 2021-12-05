@@ -1,0 +1,26 @@
+<div *ngIf="showSpinner" class="spinner">
+  <div class="lds-dual-ring"></div>
+</div>
+
+<ion-content [fullscreen]="true">
+  <div id="map"></div>
+  <ion-searchbar></ion-searchbar>
+  <div class="light-switch">
+    <ion-button *ngIf="!darkTheme" (click)="switchDarkTheme(true)" expand="block" fill="clear">
+      <ion-icon name="moon-outline"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="darkTheme" (click)="switchDarkTheme(false)" expand="block" fill="clear">
+      <ion-icon name="sunny-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+<div class="layer">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="presentPopover($event)">
+      <ion-icon name="layers-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</div>
+
+
+</ion-content>

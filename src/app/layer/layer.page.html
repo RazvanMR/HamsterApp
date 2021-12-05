@@ -1,0 +1,20 @@
+<div class="content">
+  <p>Available Layers:</p>
+  <div *ngFor="let availableLayer of availableLayers">
+    <ion-chip (click)="addLayer(availableLayer)">
+      <ion-icon name="{{availableLayer.icon}}"></ion-icon>
+      <ion-label>{{availableLayer.displayName}}</ion-label>
+    </ion-chip>
+  </div>
+
+
+  <p>Applied Layers:</p>
+  <div *ngFor="let layer of activeLayers">
+    <ion-chip>
+      <ion-icon name="{{layer.icon}}"></ion-icon>
+      <ion-label>{{layer.displayName}}</ion-label>
+      <ion-icon *ngIf="layer.active" (click)="deleteLayer(layer)" name="close"></ion-icon>
+    </ion-chip>
+  </div>
+
+</div>

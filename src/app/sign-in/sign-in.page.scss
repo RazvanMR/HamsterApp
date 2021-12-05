@@ -1,0 +1,113 @@
+.sign-in-content {
+  text-align: center;
+  --padding-bottom: 16px;
+  --padding-end: 8px;
+  --padding-start: 8px;
+  --padding-top: 16px;
+  --overflow: hidden;
+
+  .auth-title {
+    padding-left: 5vw;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 36px;
+    --padding-bottom: 8px;
+    text-align: left;
+  }
+  .sign-in{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    /* or 100% */
+    align-items: center;
+    text-align: center;
+    span {
+      color: #352A74;
+      font-weight: bold;
+    }
+
+    /* Ink/Darkest */
+    color: #090A0A;
+  }
+  .logo {
+  
+    width: 60vw;
+    
+    
+  }
+  
+  .forgot-password {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+    text-align: left;
+    padding-left: 5vw;
+    /* Sky/Dark */
+    color: #979C9E;
+    margin-top: 0;
+  }
+
+  ion-icon {
+    font-size: 32px;
+  }
+
+
+
+//  .social-auth-options {
+//    .options-divider {
+//  		text-align: center;
+//    }
+//  }
+
+  .inputs-list {
+    .input-item {
+
+    }
+  }
+  ion-item.item-has-focus {
+    ion-label.label-floating {
+      padding: 0px 5px;
+      margin-top: -22px;
+      background: var(--ion-color-light);
+      color: var(--ion-color-danger);
+      position: fixed;
+    }
+  }
+  .error-container {
+    padding-left: 16px;
+    .error-message {
+      margin: 16px 0px;
+      display: flex;
+      align-items: center;
+      color: var(--ion-color-danger);
+      font-size: 14px;
+
+      ion-icon {
+        font-size: 16px;
+        padding-inline-end: 8px;
+      }
+    }
+  }
+.header {
+
+}
+  .sign-in-btn {
+    margin: 16px 0px;
+  }
+
+  .sign-up-btn-wrapper {
+    justify-content: flex-end;
+    align-items: center;
+
+    .sign-up-btn {
+      --padding-end: 0px;
+    }
+  }
+}
